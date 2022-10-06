@@ -9,67 +9,62 @@
         --Dark-blue: hsl(218, 44%, 22%);
     }
 
+    main, .general__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
     main {
         background-color: var(--Light-gray);
         min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2.5rem;
     }
 
-    p {
-        font-size: 1.5rem;
-    }
-
-    .qr__container {
+    .general__container {
         background-color: var(--White);
-        padding: 1.5rem;
-        border-radius: 1.2rem;
-        max-width: 300px;
-    }
-
-    .qr-image__container {
         border-radius: 1rem;
-        overflow: hidden;
-        margin-bottom: 2rem;
-    }
-
-    .info__container {
+        gap: 2rem;
         text-align: center;
+        font-family: var(--font-outfit);
+        max-width: 30rem;
     }
 
-    .info__container span {
-        display: block;
-        font-family: var(--font-outfit);
+    h1 {
         color: var(--Dark-blue);
         font-weight: var(--bold);
         font-size: 2rem;
-        margin-bottom: 1rem;
     }
 
-    .info__container p {
-        font-family: var(--font-outfit);
+    p {
         color: var(--Grayish-blue);
-        font-size: 1.4rem;
+        font-weight: var(--regular);
+        font-size: 1.5rem;
         margin-bottom: 2rem;
     }
 
     footer {
-        min-height: 20vh;
-        background-color: var(--Dark-blue);
-        color: var(--White);
+        height: 10vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: var(--Dark-blue);
         font-family: var(--font-outfit);
+        font-size: 1rem
     }
 
-    .attribution { 
-        font-size: 1.5rem; 
-        text-align: center; 
+    footer a {
+        color: hsl(228, 84%, 71%);
+        font-size: 1.1;
+        text-decoration: none;
     }
 
-    .attribution a { 
-        color: hsl(228, 52%, 53%); 
+    @media screen and (min-width: 500px) {
+        footer {
+            font-size: 1.2rem;
+        }
+        footer a {
+            font-size: 1.6rem;
+        }
     }
