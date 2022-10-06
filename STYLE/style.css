@@ -1,0 +1,75 @@
+
+    :root {
+        --font-outfit: 'Outfit', sans-serif;
+        --regular: 400;
+        --bold: 700;
+        --White: hsl(0, 0%, 100%);
+        --Light-gray: hsl(212, 45%, 89%);
+        --Grayish-blue: hsl(220, 15%, 55%);
+        --Dark-blue: hsl(218, 44%, 22%);
+    }
+
+    main {
+        background-color: var(--Light-gray);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .qr__container {
+        background-color: var(--White);
+        padding: 1.5rem;
+        border-radius: 1.2rem;
+        max-width: 300px;
+    }
+
+    .qr-image__container {
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+
+    .info__container {
+        text-align: center;
+    }
+
+    .info__container span {
+        display: block;
+        font-family: var(--font-outfit);
+        color: var(--Dark-blue);
+        font-weight: var(--bold);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .info__container p {
+        font-family: var(--font-outfit);
+        color: var(--Grayish-blue);
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        min-height: 20vh;
+        background-color: var(--Dark-blue);
+        color: var(--White);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-outfit);
+    }
+
+    .attribution { 
+        font-size: 1.5rem; 
+        text-align: center; 
+    }
+
+    .attribution a { 
+        color: hsl(228, 52%, 53%); 
+    }
